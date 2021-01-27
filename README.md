@@ -19,3 +19,34 @@ Esse projeto tem como objetivo de desenvolver um quiz base, e nesse quiz vou ult
 
 
 ## Passos Iniciais da rodar o projeto 🚀
+
+- Antes de qualquer coisa, você vai precisar instaladr no seu computador as seguintes tecnologias, caso não tenha instaladas: 
+	* [Git](https://git-scm.com) -> Para poder clonar o projeto, e ter um controle de versão.
+	* [Node.js](https://nodejs.org/en/) -> Para poder rodar a parte Backend da apliação.
+	* [Yarn](https://yarnpkg.com/) -> Para ter uma melhor experiência quando for executar a aplicação.
+- É recomendavél ter algum tipo de editor de código ou IDE instaldo, eu ultilizo e recomendo o [VSCode](https://code.visualstudio.com/).
+
+
+### :octocat: Como clonar o repositório do projeto
+
+```bash
+# Clone este repositório
+$ git clone <https://github.com/Luann0233/quiz-base>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd quiz-base
+
+```
+
+### 💻 Rodando a aplicação web
+```bash
+
+# Instale as dependências
+yarn install
+
+# Execute a aplicação 
+yarn dev
+
+# O aplicação será aberta(geralmente) na porta:3000 - acesse <http://localhost:3000>
+```
+
