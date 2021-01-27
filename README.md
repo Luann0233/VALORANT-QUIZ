@@ -11,11 +11,18 @@ Esse projeto tem como objetivo de desenvolver um quiz base, e nesse quiz vou ult
 
 ## 💬 Mais Sobre o Projeto
 
-## Tecnologias utilizadas:
+<h3 align="center">Tecnologias utilizadas:</h3>
+<p align="center">
+<a href ="https://pt-br.reactjs.org"> <img alt="React" width="60px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" /> </a>
+<a href ="https://nextjs.org"> <img alt="NextJS" width="60px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png" />
+</a>
+<a href ="https://styled-components.com/"> <img alt="Styled Components" width="60px" src="https://miro.medium.com/max/318/1*7jRD5QhgARucFKvRHFxpOg.png" /> </a>
 
-* [Reactjs](https://pt-br.reactjs.org)
-* [Nextjs](https://nextjs.org)
-* [Styled Components](https://styled-components.com/)
+
+</p>
+
+<br>
+
 
 
 ## Passos Iniciais da rodar o projeto 🚀
@@ -24,7 +31,7 @@ Esse projeto tem como objetivo de desenvolver um quiz base, e nesse quiz vou ult
 	* [Git](https://git-scm.com) -> Para poder clonar o projeto, e ter um controle de versão.
 	* [Node.js](https://nodejs.org/en/) -> Para poder rodar a parte Backend da apliação.
 	* [Yarn](https://yarnpkg.com/) -> Para ter uma melhor experiência quando for executar a aplicação.
-- É recomendavél ter algum tipo de editor de código ou IDE instaldo, eu ultilizo e recomendo o [VSCode](https://code.visualstudio.com/).
+- É recomendavél ter algum tipo de editor de código ou IDE instaldo, eu ultilizo e recomendo o [VSCode](https://code.visualstudio.com/). 
 
 
 ### :octocat: Como clonar o repositório do projeto
