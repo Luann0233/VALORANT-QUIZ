@@ -55,4 +55,8 @@ yarn install
 yarn dev
 
 # O aplicação será aberta(geralmente) na porta:3000 - acesse <http://localhost:3000>
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 1d8e972efcc83b26c21152d04675f3b14240dbb1
