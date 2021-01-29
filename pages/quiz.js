@@ -11,7 +11,7 @@ function LoadingWidget() {
         <Widget>
             <Widget.Header>
                 Carregando...
-      </Widget.Header>
+            </Widget.Header>
 
             <img
                 alt="Loading"
@@ -35,6 +35,7 @@ function QuestionWidget({
     onSubmit,
 }) {
     const questionId = `question__${questionIndex}`
+
     return (
         <Widget>
             <Widget.Header>
@@ -75,7 +76,7 @@ function QuestionWidget({
                                 htmlFor={alternativeId}
                             >
                                 <input
-                                    style={{ display: 'none' }}
+                                    //style={{ display: 'none' }}
                                     id={alternativeId}
                                     name={questionId}
                                     type="radio"
@@ -86,11 +87,11 @@ function QuestionWidget({
                     })}
 
                     {/* <pre>
-            {JSON.stringify(question, null, 4)}
-          </pre> */}
+                        {JSON.stringify(question, null, 4)}
+                    </pre> */}
                     <Button type="submit">
                         Confirmar
-          </Button>
+                    </Button>
                 </form>
             </Widget.Content>
         </Widget>
@@ -134,6 +135,10 @@ export default function QuizPage() {
         <QuizBackground backgroundImage={db.bg}>
             <QuizContainer>
                 <QuizLogo />
+                
+                {screenState === screenStates.LOADING && <LoadingWidget />}
+
+
                 {screenState === screenStates.QUIZ && (
                     <QuestionWidget
                         question={question}
@@ -142,8 +147,6 @@ export default function QuizPage() {
                         onSubmit={handleSubmitQuiz}
                     />
                 )}
-
-                {screenState === screenStates.LOADING && <LoadingWidget />}
 
                 {screenState === screenStates.RESULT && <div>Você acertou X questões, parabéns!</div>}
             </QuizContainer>

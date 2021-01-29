@@ -33,7 +33,7 @@ export default function Home() {
         <meta property="title" content={db.title} />
         <meta property="url" content="https://quiz-base-f8uz8mjre.vercel.app/" />
         <meta property="description" content={db.description} />
-        <meta property="image" content="https://valorantstrike.com/wp-content/uploads/2020/08/Valorant-Wallpaper-Girls-Dark-Display.jpg" />
+        <meta property="image" content="https://i.imgur.com/nw2Nxjw.png" />
         <meta property="image:type" content="image/jpg" />
         <meta property="image:width" content="1920" />
         <meta property="image:height" content="1080" />
