@@ -27,9 +27,10 @@ const GlobalStyle = createGlobalStyle`
   }
   img{
     width: auto;
-    height: 50px;
   }
 `;
+
+
 
 const theme = db.theme
 

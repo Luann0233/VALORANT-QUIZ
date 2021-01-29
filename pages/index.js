@@ -7,22 +7,13 @@ import db from '../db.json'
 import QuizBackground from '../src/components/QuizBackground'
 import QuizLogo from '../src/components/QuizLogo'
 import GitHubCorner from '../src/components/GitHubCorner'
+import QuizContainer from '../src/components/QuizContainer'
 import Input from '../src/components/Input'
 import Button from '../src/components/Button'
 import Widget from '../src/components/Widget'
 import Footer from '../src/components/Footer'
+import NewLogo from '../src/components/NewLogo'
 
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
 
 export default function Home() {
 
@@ -49,7 +40,7 @@ export default function Home() {
       </Head>
 
       <QuizContainer>
-        <QuizLogo />
+        <NewLogo />
 
         <Widget>
           <Widget.Header>
@@ -71,7 +62,7 @@ export default function Home() {
               /> */}
 
               <Input
-                //name="nomeUsuer"
+                name="usuerName"
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Diz aí seu nome pra jogar :)"
                 value={name}
@@ -99,9 +90,10 @@ export default function Home() {
           </Widget.Content>
         </Widget>
 
-        {/* <Footer /> */}
+          {/* <Footer /> */}
 
       </QuizContainer>
+
       <GitHubCorner projectUrl="https://github.com/Luann0233/quiz-base" />
     </QuizBackground>
 

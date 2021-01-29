@@ -1,11 +1,11 @@
   
 {
-    "bg": "https://i.imgur.com/igiBcDC.png",
+    "bg": "https://i.imgur.com/fyZbiYf.jpg",
     "title": "VALORANT Quiz",
     "description": "Teste os seus conhecimentos sobre o universo do VALORANT! Vamos ver o quanto você sabe sobre esse jogo. Divirta-se!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "image": "https://i.pinimg.com/originals/71/a8/3d/71a83d8508e92357571b3ced8ebbf17a.gif",
         "title": "Como fazer um seletor por id via CSS?",
         "description": "Essa é pra aquecer",
         "answer": 2,

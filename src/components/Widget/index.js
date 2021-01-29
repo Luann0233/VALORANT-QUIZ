@@ -7,10 +7,11 @@ export const Widget = styled.div`
   background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 5px 5px 5px black;
 
   h1, h2, h3 {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1;
     margin-bottom: 0;
   }
@@ -20,7 +21,6 @@ export const Widget = styled.div`
     line-height: 1;
     text-align: justify;
   }
-
 `;
 
 Widget.Header = styled.header`
@@ -42,6 +42,26 @@ Widget.Content = styled.div`
   ul{
     list-style: none;
     padding: 0;
+  }
+`;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  text-align: center;
+
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
 
