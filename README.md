@@ -47,7 +47,6 @@ $ cd quiz-base
 
 ### 💻 Rodando a aplicação web
 ```bash
-<<<<<<< HEAD
 
 # Instale as dependências
 yarn install
@@ -57,15 +56,3 @@ yarn dev
 
 # O aplicação será aberta(geralmente) na porta:3000 - acesse <http://localhost:3000>
 ```
-=======
-
-# Instale as dependências
-yarn install
-
-# Execute a aplicação 
-yarn dev
-
-# O aplicação será aberta(geralmente) na porta:3000 - acesse <http://localhost:3000>
-```
-
->>>>>>> 1d925ef9fe210d3ca72322d78e9c0fdc30fffb18

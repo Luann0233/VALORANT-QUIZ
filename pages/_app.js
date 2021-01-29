@@ -25,6 +25,10 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
+  img{
+    width: auto;
+    height: 50px;
+  }
 `;
 
 const theme = db.theme

@@ -7,6 +7,8 @@ import db from '../db.json'
 import QuizBackground from '../src/components/QuizBackground'
 import QuizLogo from '../src/components/QuizLogo'
 import GitHubCorner from '../src/components/GitHubCorner'
+import Input from '../src/components/Input'
+import Button from '../src/components/Button'
 import Widget from '../src/components/Widget'
 import Footer from '../src/components/Footer'
 
@@ -31,13 +33,19 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
 
       <Head>
-        <title>VALORANT Quiz</title>
+        <title>{db.title}</title>
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="The QUIZ — VALORANT QUIZ" />
-        <meta property="twitter:url" content="https://quiz-base-f8uz8mjre.vercel.app/" />
-        <meta property="twitter:description" content="Teste os seus conhecimentos sobre o universo do VALORANT! Vamos ver o quanto você sabe sobre esse jogo. Divirta-se!" />
-        <meta property="twitter:image" content="blob:https://vercel.com/f7edc526-c5d6-4e2c-9117-b9d430d3c52e" />
+        <meta charSet="utf-8" />
+        <meta property="og:type" content="website" />
+
+        <meta property="card" content="summary_large_image" />
+        <meta property="title" content={db.title} />
+        <meta property="url" content="https://quiz-base-f8uz8mjre.vercel.app/" />
+        <meta property="description" content={db.description} />
+        <meta property="image" content="https://valorantstrike.com/wp-content/uploads/2020/08/Valorant-Wallpaper-Girls-Dark-Display.jpg" />
+        <meta property="image:type" content="image/jpg" />
+        <meta property="image:width" content="1920" />
+        <meta property="image:height" content="1080" />
       </Head>
 
       <QuizContainer>
@@ -45,44 +53,53 @@ export default function Home() {
 
         <Widget>
           <Widget.Header>
-            <h1>Riot Games</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <h3>Teste os seus conhecimentos sobre o universo do VALORANT!</h3>
+            <p>{db.description}</p>
 
             <form onSubmit={function (e) {
               e.preventDefault()
               router.push(`/quiz?name=${name}`)
             }}>
 
-              <input
+              {/* <input
                 onChange={function (e) {
                   setName(e.target.value)
                 }}
                 placeholder="Diz aí seu nome pra jogar :)"
+              /> */}
+
+              <Input
+                //name="nomeUsuer"
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Diz aí seu nome pra jogar :)"
+                value={name}
               />
 
-              <button type="submit" disabled={name.length === 0}>
-                JOGAR {name}
-              </button>
-
+              <Button type="submit" disabled={name.length === 0}>
+                {` Vamos Jogar ${name}`}
+              </Button>
 
             </form>
 
           </Widget.Content>
         </Widget>
 
-
         <Widget>
-          <Widget.Header>
-            <h1>Quizes da Galera</h1>
-          </Widget.Header>
           <Widget.Content>
-            <p>Veja alguns quizes, que a galera fez...</p>
+            <h1>Quizes da Galera</h1>
+
+            <p>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão React estão fazendo:</p>
+
+            <Input disabled="true" value="QUIZ 1" />
+            <Input disabled="true" value="QUIZ 2" />
+            <Input disabled="true" value="QUIZ 3" />
+
           </Widget.Content>
         </Widget>
 
-        <Footer />
+        {/* <Footer /> */}
 
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/Luann0233/quiz-base" />
