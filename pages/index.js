@@ -1,28 +1,25 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
-import Head from 'next/head'
-import { useRouter } from 'next/router'
+import React, { useState } from "react";
+import styled from "styled-components";
+import Head from "next/head";
+import { useRouter } from "next/router";
 
-import db from '../db.json'
-import QuizBackground from '../src/components/QuizBackground'
-import QuizLogo from '../src/components/QuizLogo'
-import GitHubCorner from '../src/components/GitHubCorner'
-import QuizContainer from '../src/components/QuizContainer'
-import Input from '../src/components/Input'
-import Button from '../src/components/Button'
-import Widget from '../src/components/Widget'
-import Footer from '../src/components/Footer'
-import NewLogo from '../src/components/NewLogo'
-
+import db from "../db.json";
+import QuizBackground from "../src/components/QuizBackground";
+import QuizLogo from "../src/components/QuizLogo";
+import GitHubCorner from "../src/components/GitHubCorner";
+import QuizContainer from "../src/components/QuizContainer";
+import Input from "../src/components/Input";
+import Button from "../src/components/Button";
+import Widget from "../src/components/Widget";
+import Footer from "../src/components/Footer";
+import NewLogo from "../src/components/NewLogo";
 
 export default function Home() {
-
-  const router = useRouter()
-  const [name, setName] = React.useState('')
+  const router = useRouter();
+  const [name, setName] = React.useState("");
 
   return (
     <QuizBackground backgroundImage={db.bg}>
-
       <Head>
         <title>{db.title}</title>
 
@@ -31,7 +28,10 @@ export default function Home() {
 
         <meta property="card" content="summary_large_image" />
         <meta property="title" content={db.title} />
-        <meta property="url" content="https://quiz-base-f8uz8mjre.vercel.app/" />
+        <meta
+          property="url"
+          content="https://quiz-base-f8uz8mjre.vercel.app/"
+        />
         <meta property="description" content={db.description} />
         <meta property="image" content="https://i.imgur.com/nw2Nxjw.png" />
         <meta property="image:type" content="image/jpg" />
@@ -49,11 +49,12 @@ export default function Home() {
           <Widget.Content>
             <p>{db.description}</p>
 
-            <form onSubmit={function (e) {
-              e.preventDefault()
-              router.push(`/quiz?name=${name}`)
-            }}>
-
+            <form
+              onSubmit={function (e) {
+                e.preventDefault();
+                router.push(`/quiz?name=${name}`);
+              }}
+            >
               {/* <input
                 onChange={function (e) {
                   setName(e.target.value)
@@ -71,9 +72,7 @@ export default function Home() {
               <Button type="submit" disabled={name.length === 0}>
                 {` Vamos Jogar ${name}`}
               </Button>
-
             </form>
-
           </Widget.Content>
         </Widget>
 
@@ -81,21 +80,21 @@ export default function Home() {
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
-            <p>Dá uma olhada nesses quizes incríveis que o pessoal da Imersão React estão fazendo:</p>
+            <p>
+              Dá uma olhada nesses quizes incríveis que o pessoal da Imersão
+              React estão fazendo:
+            </p>
 
             <Input disabled="true" value="QUIZ 1" />
             <Input disabled="true" value="QUIZ 2" />
             <Input disabled="true" value="QUIZ 3" />
-
           </Widget.Content>
         </Widget>
 
-          {/* <Footer /> */}
-
+        {/* <Footer /> */}
       </QuizContainer>
 
       <GitHubCorner projectUrl="https://github.com/Luann0233/quiz-base" />
     </QuizBackground>
-
-  )
+  );
 }

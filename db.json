@@ -5,25 +5,133 @@
     "description": "Teste os seus conhecimentos sobre o universo do VALORANT! Vamos ver o quanto você sabe sobre esse jogo. Divirta-se!",
     "questions": [
       {
-        "image": "https://i.pinimg.com/originals/71/a8/3d/71a83d8508e92357571b3ced8ebbf17a.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://i.imgur.com/JhvBKyI.jpg",
+        "title": "Qual desses agentes são Norte-americano ?",
+        "description": "Sobre Agentes",
+        "answer": 3,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Breach e Sage",
+          "Sova e Cypher",
+          "Reyna e Killjoy",
+          "Brimstone e Viper",
+          "Jett e Phoenix"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://i.pinimg.com/originals/9c/8e/71/9c8e710971e2b5332cfccf4915187068.gif",
+        "title": "Quanto tempo dura a Ultimate da Viper, enquanto ela está fora da nuvem química ?",
+        "description": "Sobre Agentes",
+        "answer": 2,
+        "alternatives": [
+           "05 segundos",
+           "10 segundos",
+           "15 segundos",
+           "20 segundos",
+           "30 segundos"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/c906f8abcbcb524c6a93b5eee474a778/38df23ef870249eb-33/s2048x3072_c400,0,99400,100000/9178037d016425bd1c81030360135ef947a26611.gif",
+        "title": "Qual a passiva da agente Jett ?",
+        "description": "Sobre Agentes",
+        "answer": 1,
+        "alternatives": [
+           "Disparar Facas",
+           "Flutuar",
+           "Dash",
+           "Smoke",
+           "Salto mais alto"
+        ]
+      },
+      {
+        "image": "https://i.imgur.com/lyK4CrY.jpg",
+        "title": "Qual dessas armas possuem silenciador ?",
+        "description": "Sobre Aramas",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Phanton",
+           "Vandal",
+           "Bulldog",
+           "Aries",
+           "Marshal"
+        ]
+      },
+      {
+        "image": "https://i.imgur.com/iIaaOjs.jpg",
+        "title": "Qual o dano da Vandal, quando o tiro pega na cabeça ?",
+        "description": "Sobre Aramas",
+        "answer": 4,
+        "alternatives": [
+           "100",
+           "125",
+           "130",
+           "150",
+           "160"
+        ]
+      },
+      {
+        "image": "https://i.imgur.com/FpsUtYG.jpg",
+        "title": "Qual o nome dessa coleção de skins ?",
+        "description": "Sobre Aramas",
+        "answer": 3,
+        "alternatives": [
+           "Desolação",
+           "Oni",
+           "Nebulosa",
+           "Glitchpop",
+           "Sublime"
+        ]
+      },
+      {
+        "image": "https://i.imgur.com/jWEhZ2b.png",
+        "title": "Qual mapa possui mais pontos(bombs) ?",
+        "description": "Sobre Mapas",
+        "answer": 0,
+        "alternatives": [
+           "Haven",
+           "Split",
+           "Bind",
+           "Ascent",
+           "Icebox"
+        ]
+      },
+      {
+        "image": "https://i.imgur.com/jWEhZ2b.png",
+        "title": "Qual mapa possui um dos pontos(bombs), presentes durante o tutorial ?",
+        "description": "Sobre Mapas",
+        "answer": 3,
+        "alternatives": [
+          "Haven",
+          "Split",
+          "Bind",
+          "Ascent",
+          "Icebox"
+        ]
+      },
+      {
+        "image": "https://i.imgur.com/jWEhZ2b.png",
+        "title": "Qual dos mapas possuem um mercado de aronguejo(criatura presente no universo de League of Legends)? ",
+        "description": "Sobre Mapas",
+        "answer": 1,
+        "alternatives": [
+          "Haven",
+          "Split",
+          "Bind",
+          "Ascent",
+          "Icebox"
+        ]
+      },
+      {
+        "image": "https://i.imgur.com/oBrP0uC.png",
+        "title": "A Spike demora quatro segundos para a spike ser plantada e __ segundos para detonar após o plant.",
+        "description": "Sobre Spike",
+        "answer": 4,
+        "alternatives": [
+           "25 segundos",
+           "30 segundos",
+           "35 segundos",
+           "40 segundos",
+           "45 segundos"
         ]
       }
     ],

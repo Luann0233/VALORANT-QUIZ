@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
 const InputBase = styled.input`
   width: 100%;
@@ -28,7 +28,7 @@ export default function Input({ onChange, placeholder, ...props }) {
 }
 
 Input.defaultProps = {
-  value: '',
+  value: "",
 };
 
 Input.propTypes = {
